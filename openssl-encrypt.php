@@ -7,12 +7,12 @@ What do you want to do?:
 2. Decrypt
 EOT . PHP_EOL;
 
-$option = (int) strtolower(readline('=> '));
+$option = (int) strtolower(readline('Number: '));
 $option = ($option == 2) ? 'decrypt' : 'encrypt' ;
-
+var_dump($option);
 $input = readline("Input: ");
 
-$input = encrypt_decrypt('encrypt', $input);
+$input = encrypt_decrypt($option, $input);
 echo $input . PHP_EOL;
 
 function encrypt_decrypt($action, $string) 
