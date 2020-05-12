@@ -13,7 +13,7 @@ $option = ($option == 2) ? 'decrypt' : 'encrypt' ;
 $input = readline("Input: ");
 
 $input = encrypt_decrypt('encrypt', $input);
-echo $input;
+echo $input . PHP_EOL;
 
 function encrypt_decrypt($action, $string) 
     {
